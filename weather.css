@@ -179,7 +179,7 @@ h1 {
 
 .main-card{
   position: relative;
-  width: 30%;
+  min-width: 240px;
   height: 40%;
   margin: 2rem auto;
   display: flex;
