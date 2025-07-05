@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather App GR</title>
+  <link rel="stylesheet" href="weather.css"/>
+</head>
+<body>
+  <div class="sky">
+  <div class="cloud cloud1"></div>
+  <div class="cloud cloud2"></div>
+  <div class="sun"></div>
+</div>
+
+  <div class="container">
+    <h1>Πρόγνωση Καιρού</h1>
+
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Αναζήτησε πόλη..." />
+      <button id="searchBtn">Αναζήτηση</button>
+    </div>
+
+    <div id="locationWeather" class="weather-card hidden">
+      <h2>Ο Καιρός σου 📍</h2>
+      <p id="locTemp">--°C</p>
+      <p id="locDesc">--</p>
+    </div>
+    <div id="userCity" class="">
+      
+    </div>
+    <h3 class="section-title">Κεντρικές πόλεις</h3>
+    <div class="city-grid">
+      <div class="weather-card " id="athensCard">
+        <h2>Αθήνα</h2>
+        <p class="temp-athens">--°C</p>
+        <p class="desc-athens">--</p>
+      </div>
+      <div class="weather-card " id="thessalonikiCard">
+        <h2>Θεσσαλονίκη</h2>
+        <p class="temp-thessaloniki">--°C</p>
+        <p class="desc-thessaloniki">--</p>
+      </div>
+      <div class="weather-card " id="patraCard">
+        <h2>Πάτρα</h2>
+        <p class="temp-patras">--°C</p>
+        <p class="desc-patras">--</p>
+      </div>
+      <div class="weather-card" id="heraklionCard">
+        <h2>Ηράκλειο</h2>
+        <p class="temp-heraklion">--°C</p>
+        <p class="desc-heraklion">--</p>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="module">
+    import { App } from '/weather-app/js/app.js';
+    App.init();
+  </script>
+</body>
+</html>
